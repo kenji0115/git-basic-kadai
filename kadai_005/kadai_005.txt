@@ -1,0 +1,27 @@
+kenji@KenjinoMacBook-Air ~ % cd /Users/kenji/Desktop/test
+kenji@KenjinoMacBook-Air test % mkdir git_challenge
+kenji@KenjinoMacBook-Air test % cd git_challenge
+kenji@KenjinoMacBook-Air git_challenge % git init
+Initialized empty Git repository in /Users/kenji/Desktop/test/git_challenge/.git/
+kenji@KenjinoMacBook-Air git_challenge % touch hello,world.txt
+kenji@KenjinoMacBook-Air git_challenge % git add .
+kenji@KenjinoMacBook-Air git_challenge % git status 
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   hello,world.txt
+
+kenji@KenjinoMacBook-Air git_challenge % git commit -m "hello,world.txtを 追加"
+[main (root-commit) eafc898] hello,world.txtを追加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello,world.txt
+kenji@KenjinoMacBook-Air git_challenge % git add .
+kenji@KenjinoMacBook-Air git_challenge % git commit -m "日本語訳を追記"
+[main 07910d6] 日本語訳を追記
+ 1 file changed, 1 insertion(+)
+kenji@KenjinoMacBook-Air git_challenge % git log --oneline
+07910d6 (HEAD -> main) 日本語訳を追記
+eafc898 hello,world.txtを追加
