@@ -1,0 +1,14 @@
+kenji@KenjinoMacBook-Air git_challenge % echo 'Hello, world!' >> hello_world.txt 
+kenji@KenjinoMacBook-Air git_challenge % git add hello_world.txt
+kenji@KenjinoMacBook-Air git_challenge % git commit -m "hello_world.txtを追加"
+[main 1151321] hello_world.txtを追加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+kenji@KenjinoMacBook-Air git_challenge % echo 'こんにちは、世界！' >> hello_world.txt
+kenji@KenjinoMacBook-Air git_challenge % git add hello_world.txt
+kenji@KenjinoMacBook-Air git_challenge % git commit -m "日本語訳を追記"  
+[main d452ac7] 日本語訳を追記
+ 1 file changed, 1 insertion(+)
+kenji@KenjinoMacBook-Air git_challenge % git log --oneline
+d452ac7 (HEAD -> main) 日本語訳を追記
+1151321 hello_world.txtを追加
